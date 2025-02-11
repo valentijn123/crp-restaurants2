@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    font-smooth: auto;
+}
+
+*:focus {
+    outline: none;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --primary: theme('colors.primary');
+    --secondary: theme('colors.secondary');
+    --accent: theme('colors.accent');
+
+    --text-primary: theme('colors.txt-primary');
+    --text-secondary: theme('colors.txt-secondary');
+
+    color: var(--text-primary);
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+    font-size: 1.6rem;
+    overflow: hidden;
+}
+
+/* Scrollbar styling */
+.scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+    background: #2a2a2a;
+    border-radius: 3px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    background: #3a3a3a;
+}
+
+/* Firefox */
+.scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: #2a2a2a transparent;
+}
